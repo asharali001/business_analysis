@@ -29,6 +29,7 @@ With more time I'd mostly work on better error handling and taking care of edge 
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/asharali001/business_analysis.git
+   cd business_analysis
    ```
 
 2. **Setup environment variables:**
