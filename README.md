@@ -15,18 +15,6 @@ Why? I initally decided to do it & thats why there is still an option on UI to c
 
 With more time I'd mostly work on better error handling and taking care of edge cases. I'd improve AI suggestions and summarizations by creating agents specifically created for this use case. Work on the security of the system more.
 
-## 📱 How to Use
-
-1. **Open the frontend** at `http://localhost:3000/`
-2. **Enter your business namem, preferably with location** (e.g., "Burger King Joensuu")
-3. **Optionally add competitors** or leave empty for analysis only
-4. **Click "Start Analysis"** to get insights
-5. **View the results** including:
-   - Business profile score
-   - Competitor comparison table
-   - AI-generated suggestions
-
-
 ### 🚀 How to run
 
 ### Prerequisites
@@ -243,5 +231,18 @@ curl -X POST http://localhost:8000/api/compare/ \
      -H "Content-Type: application/json" \
      -d '{"your_business": "Burger King Joensuu", "competitor_business": "Subway Joensuu"}'
 ```
+
+
+
+## 📱 How to Use
+
+1. **Open the frontend** at `http://localhost:3000/`
+2. **Enter your business namem, preferably with location** (e.g., "Burger King Joensuu")
+3. **Optionally add competitors** or leave empty for analysis only
+4. **Click "Start Analysis"** to get insights
+5. **View the results** including:
+   - Business profile score
+   - Competitor comparison table
+   - AI-generated suggestions
 
 
