@@ -101,34 +101,6 @@ The Vue.js app will be available at: `http://localhost:3000/`
    - Competitor comparison table
    - AI-generated suggestions
 
-## 🔑 API Keys Required
-
-For this application to work properly, you need:
-
-1. **OpenAI API Key**: Used for AI-powered business analysis and suggestions
-   - Get it from: https://platform.openai.com/api-keys
-   - Add to `.env` as: `OPENAI_API_KEY=your_key_here`
-
-2. **SerpAPI Key**: Used for fetching real business data from search results
-   - Get it from: https://serpapi.com/dashboard
-   - Add to `.env` as: `SERPAPI_KEY=your_key_here`
-
-**Note**: The application includes fallback mechanisms if API keys are not provided, but full functionality requires both keys.
-
-## 🎯 Project Overview
-
-### What you skipped and why
-
-- Charts for visual comparison
-Why? I prioratized the core features that show my skils in building a full stack system and AI integration, this feature was skipped due to time constraint.
-
-- Style or tone toggles (e.g., "casual" vs "data-driven" suggestions)
-Why? I initally decided to do it & thats why there is still an option on UI to choose but I figured that it would be better to implement this if I make agents for both and I decied to not do it in this time frame.
-
-### What you'd improve with more time
-
-With more time I'd mostly work on better error handling and taking care of edge cases. I'd improve AI suggestions and summarizations by creating agents specifically created for this use case. Work on the security of the system more.
-
 ## 🏗️ Architecture
 
 ### Backend (Django)
@@ -231,18 +203,3 @@ curl -X POST http://localhost:8000/api/compare/ \
      -H "Content-Type: application/json" \
      -d '{"your_business": "Burger King Joensuu", "competitor_business": "Subway Joensuu"}'
 ```
-
-
-
-## 📱 How to Use
-
-1. **Open the frontend** at `http://localhost:3000/`
-2. **Enter your business namem, preferably with location** (e.g., "Burger King Joensuu")
-3. **Optionally add competitors** or leave empty for analysis only
-4. **Click "Start Analysis"** to get insights
-5. **View the results** including:
-   - Business profile score
-   - Competitor comparison table
-   - AI-generated suggestions
-
-
